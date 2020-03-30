@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const questions = require('./src/questions');
 const functions = require('./src/functions');
 const inquirer = require('inquirer');

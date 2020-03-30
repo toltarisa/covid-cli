@@ -1,13 +1,17 @@
 {
-  "name": "covid-cli",
+  "name": "covid-cli-19",
   "version": "1.0.0",
   "description": "simple cli app that show covid stats",
   "main": "index.js",
   "author": "Isa Toltar",
   "license": "MIT",
+  "keywords": ["covid-cli","covid-19","inquirer","cli-tool"],
   "scripts": {
     "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log,./README.md,./requirements.txt,./yarn.lock --copy-files",
     "start": "node index.js"
+  },
+  "bin": {
+    "covid-cli":"index.js"
   },
   "dependencies": {
     "axios": "^0.19.2",

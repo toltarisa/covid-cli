@@ -3,7 +3,7 @@ const chalk = require('chalk');
 const Table = require('cli-table');
 module.exports = {
     getAllCases: function(url){
-        api.getGlobalTotal(url).then(data => {
+        api(url).then(data => {
             const head = Object.keys(data);
             const values = [];
              for (let [key, value] of Object.entries(data)) {
@@ -17,7 +17,7 @@ module.exports = {
           })
     },
     getAllCountriesTotals: function(url){
-        api.getAllCountriesTotals(url).then(data => {
+        api(url).then(data => {
            const head = [chalk.blue('country'),chalk.keyword('orange')('cases'),chalk.yellow('today cases'),chalk.red('deaths'),chalk.green('recovered')];
            const result = data.map(({ country, cases, todayCases,deaths,recovered }) => [country, cases, todayCases,deaths,recovered]);
            const table = new Table({
@@ -33,7 +33,7 @@ module.exports = {
     },
 
     getSpecificCountryData: function(url) {
-        api.getSpecificCountryData(url).then(data => {
+        api(url).then(data => {
             const head = Object.keys(data);
             const filtered = head.filter(prop => {
                 return !['countryInfo','updated','casesPerOneMillion','deathsPerOneMillion'].includes(prop);
@@ -56,7 +56,7 @@ module.exports = {
         })
     },
     sortAllCountriesBy: function(url) {
-        api.sortAllCountriesBy(url).then(data => {
+        api(url).then(data => {
             const head = [chalk.blue('country'),chalk.keyword('orange')('cases'),chalk.yellow('today cases'),chalk.red('deaths'),chalk.green('recovered')];
            const result = data.map(({ country, cases, todayCases,deaths,recovered }) => [country, cases, todayCases,deaths,recovered]);
            const table = new Table({
