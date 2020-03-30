@@ -1,6 +1,6 @@
 {
   "name": "covid-cli-19",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "simple cli app that show covid stats",
   "main": "index.js",
   "author": "Isa Toltar",

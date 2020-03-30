@@ -45,7 +45,7 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 
 ## Install
 
-    $ yarn global add globakcovid-cli-12
+    $ yarn global add covid-cli-19
     $ npm install -g covid-cli-19 
     
 
