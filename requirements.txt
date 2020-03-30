@@ -1,0 +1,13 @@
+Covid-cli
+
+## packages
+
+  - Inquirer.js -> interactive command line interfaces || enquirer.js
+  - chalk.js -> terminal string styling
+  - cli-table -> creating table interfaces on cli
+  - axios -> making api calls
+  - novelCOVID/API -> data source for covid
+  - terminal-image -> displaying images inside cli screen.
+
+Project gist: List,search covid statistics by country 
+	
