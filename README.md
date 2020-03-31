@@ -2,6 +2,8 @@
 
 A simple cli that shows covid stats
 
+![covid-cli](/assets/covid.png)
+
 ---
 ## Requirements
 

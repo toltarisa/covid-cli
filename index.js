@@ -18,6 +18,7 @@ const run = async() => {
   switch(answer){
     case 'See Global Stats':
       return functions.getAllCases(urls.allCases);
+      
     case 'Get All Countries Totals':
       return functions.getAllCountriesTotals(urls.countryTotals);
     case 'See details about specific country':
