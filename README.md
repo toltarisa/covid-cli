@@ -5,7 +5,7 @@ A simple cli that shows covid stats
 ![covid-cli](/assets/covid.png)
 
 ---
-[](https://www.npmjs.com/package/covid-cli-19)
+[npm page](https://www.npmjs.com/package/covid-cli-19)
 ## Requirements
 
 For development, you will only need Node.js and a node global package, Yarn, installed in your environement.
