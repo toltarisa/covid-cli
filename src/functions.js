@@ -10,7 +10,8 @@ module.exports = {
               values.push(value);
             }
             const table = new Table({
-              head:head
+              head:head,
+              
             })
             table.push(values);
             console.log(table.toString());
@@ -38,20 +39,23 @@ module.exports = {
             const filtered = head.filter(prop => {
                 return !['countryInfo','updated','casesPerOneMillion','deathsPerOneMillion'].includes(prop);
             })
+            
            
             const values = [];
               for (let [key, value] of Object.entries(data)) {
                values.push(value);
             }
+            
             const filteredValues = values.filter((_,index) => {
-                return ![1,11,9,10].includes(index);
+                return ![0,2,11,10].includes(index);
             });
+            
             
             const table = new Table({
               head:filtered,
             })
-            table.push(filteredValues);
-            console.log(table.toString());
+             table.push(filteredValues);
+             console.log(table.toString());
 
         })
     },
